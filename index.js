@@ -13,7 +13,12 @@ mongoose.connect(DB).then(() => {
     console.log("Database connection fail");
 });
 
-
+app.get('/', (req, res) => {
+    
+    res.json({
+        msg : "Hello "
+    })
+})
 
 //Here Server is listening
 const PORT = process.env.PORT || 4000; 
