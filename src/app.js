@@ -14,7 +14,5 @@ app.use(express.json({limit:"16kb"}))
 app.use(express.urlencoded({extended: true}))
 // this is used for accessing public resources from server
 app.use(express.static("public"))
-// this is used to parse the cookie
-app.use(cookieParser());
 
 export default app
